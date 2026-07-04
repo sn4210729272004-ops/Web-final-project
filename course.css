@@ -1,8 +1,5 @@
 @charset "UTF-8";
 
-/* ==========================================
-   1. VARIABLES & RESET
-   ========================================== */
 :root {
     --primary-glow: #00ffff;
     /* Cyan Glow */
@@ -29,9 +26,7 @@ body {
     position: relative;
 }
 
-/* ==========================================
-   تأثير صورة الخلفية الكحلية الداكنة (Premium Deep Blue Background)
-   ========================================== */
+
 body::before {
     content: '';
     position: fixed;
@@ -39,14 +34,14 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    /* تدرج كحلي داكن يغطي الصورة تماماً لمنع اللون الأخضر ولراحة العين */
+    
     background:
         linear-gradient(180deg, rgba(10, 25, 47, 0.90) 0%, rgba(2, 12, 27, 0.95) 100%),
         url('https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1920') no-repeat center center/cover;
     z-index: -1;
 }
 
-/* إضافة طبقة أمواج شبكية رقمية تتحرك ببطء شديد ومريح للعين */
+
 body::after {
     content: '';
     position: fixed;
@@ -58,10 +53,10 @@ body::after {
     z-index: -1;
     opacity: 0.6;
     animation: backgroundMove 60s linear infinite;
-    /* حركة انسيابية بطيئة جداً */
+   
 }
 
-/* الأنيميشن الخاص بتحريك الشبكة الرقمية بسلاسة */
+
 @keyframes backgroundMove {
     0% {
         transform: translate(0, 0) scale(1);
@@ -69,7 +64,7 @@ body::after {
 
     50% {
         transform: translate(-2%, -2%) scale(1.05);
-        /* حركة خفيفة لتفادي إجهاد العين */
+        
     }
 
     100% {
@@ -77,9 +72,7 @@ body::after {
     }
 }
 
-/* ==========================================
-   2. HEADER & NAVIGATION (Glassmorphism)
-   ========================================== */
+
 .main-header {
     background-color: rgba(2, 11, 26, 0.6);
     backdrop-filter: blur(15px);
@@ -147,9 +140,6 @@ body::after {
     width: 100%;
 }
 
-/* ==========================================
-   3. HERO SECTION
-   ========================================== */
 .hero-section {
     height: 100vh;
     display: flex;
@@ -199,9 +189,6 @@ body::after {
     box-shadow: 0 0 30px var(--primary-glow);
 }
 
-/* ==========================================
-   4. COURSES GRID & CARDS
-   ========================================== */
 .courses-section {
     padding: 6rem 2rem;
     max-width: 1200px;
@@ -330,9 +317,7 @@ body::after {
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
-/* ==========================================
-   5. FOOTER
-   ========================================== */
+
 .main-footer {
     background-color: rgba(2, 11, 26, 0.8);
     backdrop-filter: blur(10px);
@@ -343,9 +328,6 @@ body::after {
     border-top: 1px solid rgba(0, 255, 255, 0.08);
 }
 
-/* ==========================================
-   6. RESPONSIVE DESIGN
-   ========================================== */
 @media (max-width: 992px) {
     .hero-section h1 {
         font-size: 2.8rem;
