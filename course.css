@@ -2,7 +2,7 @@
 
 :root {
     --primary-glow: #00ffff;
-   
+    /* Cyan Glow */
     --secondary-glow: #008080;
     --bg-dark: #020b1a;
     --card-bg: rgba(255, 255, 255, 0.03);
@@ -26,7 +26,6 @@ body {
     position: relative;
 }
 
-
 body::before {
     content: '';
     position: fixed;
@@ -34,7 +33,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    
+
     background:
         linear-gradient(180deg, rgba(10, 25, 47, 0.90) 0%, rgba(2, 12, 27, 0.95) 100%),
         url('https://images.unsplash.com/photo-1510511459019-5dda7724fd87?q=80&w=1920') no-repeat center center/cover;
@@ -53,7 +52,6 @@ body::after {
     z-index: -1;
     opacity: 0.6;
     animation: backgroundMove 60s linear infinite;
-   
 }
 
 
@@ -64,14 +62,13 @@ body::after {
 
     50% {
         transform: translate(-2%, -2%) scale(1.05);
-        
+
     }
 
     100% {
         transform: translate(0, 0) scale(1);
     }
 }
-
 
 .main-header {
     background-color: rgba(2, 11, 26, 0.6);
@@ -188,6 +185,7 @@ body::after {
     color: var(--bg-dark);
     box-shadow: 0 0 30px var(--primary-glow);
 }
+
 
 .courses-section {
     padding: 6rem 2rem;
@@ -317,7 +315,6 @@ body::after {
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
 }
 
-
 .main-footer {
     background-color: rgba(2, 11, 26, 0.8);
     backdrop-filter: blur(10px);
@@ -327,6 +324,7 @@ body::after {
     margin-top: auto;
     border-top: 1px solid rgba(0, 255, 255, 0.08);
 }
+
 
 @media (max-width: 992px) {
     .hero-section h1 {
